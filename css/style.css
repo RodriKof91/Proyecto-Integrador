@@ -1,0 +1,382 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+
+    header {
+        height: 130px;
+        background-color:#FC7300;
+    }
+    
+    
+    .menu {
+        height: 120px;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    
+    }
+    
+    a {
+        text-decoration: none;
+        color: #EFF5F5; 
+        font-size: 13px;
+    
+    }
+    
+    /* seccion banner */
+    
+    #banner {
+        background-image: url(../img/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 370px;
+    
+    }
+    
+    h1 {
+        font-size: 60px;
+        color: #EFF5F5; 
+    
+    }
+    
+    #banner p {
+        font-weight: 900;
+        color: #EFF5F5; 
+    
+    }
+    
+    /*seccion quienes somos*/ 
+    #quienes-somos {
+        height: 370px;
+        display: flex;
+        flex-direction:column;
+        color: #00425A;
+        background-color: #EFF5F5;
+    
+    
+    }
+    .centro {
+        text-align: center;
+    }
+    
+    h2 {
+        padding-top: 3%;
+        padding-bottom: 2%;
+    }
+    
+    .foto-quienessomos {
+        display: flex;
+        align-items: center;
+    }
+    
+    .foto-quienessomos img {
+        width: 60%;
+    }
+    
+    #quienes-somos p {
+    
+        font-size: 90%;
+        padding-top: 3%;
+    }
+    
+    /*seccion propuesta educativa*/
+    
+    
+    #popuesta-educativa {
+        background-color:#181823;
+        color: #EFF5F5; 
+        height: 1100px;
+    
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        justify-content: space-around;
+    
+    }
+    
+    
+    #popuesta-educativa > h2 {
+        text-align: center;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 250%;
+    }
+    
+    /* Estilo para la línea horizontal */
+    .linea{
+        border-bottom: 1px dashed #181823; 
+        width: 100%; /* Ancho completo de la línea */
+        margin: 10px 0; 
+    }
+    
+    .card {
+        margin-left: 10%;
+    }
+    
+    /* Estilos básicos para la card */
+    .tarjeta {
+        width: 75%;
+        height: 180px;
+        border: 3px solid #FC7300;
+        border-radius: 12px;
+        padding:20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-image: url(../img/compu.png);
+        color: #EFF5F5;
+        text-align: center;
+        background-color: #1F8A70;
+    }
+      
+      
+    /* Estilos para el título dentro de la card */
+    .tarjeta h2 {
+        font-size: 20px;
+        color: #181823;
+        font-weight: 900;
+    }
+      
+    /* Estilos para el texto descriptivo dentro de la card */
+    .tarjeta p {
+        margin-top: 10px;
+        color: #181823;
+    }
+    
+    .container button {
+        margin-top: 5%;
+        border-radius: 5px;
+        color:#FC7300;
+        background-color: #181823;
+        border-style: none;
+    
+    }
+    
+    /* eligenos */
+    
+    #porque-elegirnos {
+        background-color: #00425A; 
+        height: 450px;
+        color:#FC7300;
+    }
+    .foto-quienessomos {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #porque-elegirnos p {
+        font-size: 90%;
+        padding-top: 3%;
+    
+    }
+    
+    /* seccion noticias*/ 
+    
+    #noticias {
+         background-color:#181823;
+         color: #EFF5F5; 
+    
+    }
+    
+    #noticias p {
+        font-size: 70%;
+        padding-bottom: 4%;
+    }
+    .flex {
+        display: flex;
+    }
+    
+    .news {
+        margin-top: 2%
+    }
+    
+    /* seccion footer*/
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: #00425A;
+        color: #EFF5F5; 
+        font-size: 80%;
+    
+    
+    
+    }
+    
+    #redessociales {
+        width: 100%;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .i-sociales {
+        margin-right: 15px;
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+    }
+    
+    #ubicacion {
+        display: none;
+    }
+    
+    
+    #contact {
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    #contact h2 {
+        margin-top: 10%;
+    }
+    
+    .contacto-opciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+/* Media
+
+/*header {
+    width: 768px;
+    height: 50px;
+    background-color:#FC7300;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+/* seccion banner 
+
+#banner {
+    width: 768px;
+    background-image: url(../img/banner.jpeg);
+    height: 370px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 60px;
+}
+
+
+/* seccion quienes somos 
+
+#quienes-somos {
+    width: 768px;
+}
+
+
+#quienes-somos img {
+    width: 40%;
+
+}
+
+
+.foto-quienessomos {
+    display: flex;
+}
+
+/* seccion propuesta educativa 
+
+#popuesta-educativa {
+    width: 768px;
+    text-align: center;
+}
+
+
+
+#popuesta-educativa article {
+    width: 280px;
+    height: 322px;
+    flex-shrink: 0;
+    display: inline-block;
+    border-radius: 5px;
+    background: #FFFF;
+    margin-top: 20px;
+}
+
+
+
+/* eligenos 
+#porque-elegirnos {
+    width: 768px;
+}
+
+
+/* seccion noticias 
+#noticias {
+    width: 768px;
+
+}
+
+#noticias article {
+    width: 350px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* seccion footer 
+
+footer{
+    display: flex;
+}
+
+#redessociales {
+    width: 226px;
+}
+
+#ubicacion {
+    width: 226px;
+}
+
+#contacto {
+    width: 226px;
+}*/

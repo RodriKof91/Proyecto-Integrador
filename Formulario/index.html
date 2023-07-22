@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Modifica el titulo del documento -->
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Registro de usuario</h1>
+    <form action="resultado.html" method="POST">
+      <fieldset>
+        <legend><span>1</span>Datos Personales</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <label for="e-mail">Email:</label>
+        <input type="email" name="e-mail" id="e-mail" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" 
+        title="Ingrese password con al menos una MAYUSCULA, una minuscula y un numero" required> <!--pattern="^(?=.*\d)(?=.*[az])(?=.*[AZ])(?!.*\s).*$
+        "-->
+      </fieldset>
+
+      <fieldset>
+        <legend><span>2</span>Tu Perfil</legend>
+        <label for="feacha">Fecha de nacimiento:</label>
+        <input type="date" name="fecha" max="2005-06-01" id="fecha" required>
+        <label for="trabajo">Seleccione "job"</label>
+        <select name="job" id="trabajo" value="job"> 
+          <option value="job" selected>Desarrollador front-end</option>
+          <option value="Desarrollador back-end">Desarrollador back-end</option>
+          <option value="Desarrollador full-stack">Desarrollador full-stack</option>
+          <option value="Diseñador">Diseñador web</option>
+        </select>
+        <label for="intereses">Cuales son tus intereses ?</label>
+        <input type="checkbox" name="intereses" value="Desarrollo">Desarrollo <br>
+        <input type="checkbox" name="intereses" value="Diseño">Diseño <br>
+        <input type="checkbox" name="intereses" value="Negocios">Negocios <br>
+        <br>
+      </fieldset>
+
+      <fieldset>
+        <legend><span>3</span>Newsletter</legend>
+        <label for="newsletter">Recibir noticias por correo ?</label>
+        <input type="radio" name="newsletter" value="1">Si, me gustaria recibir noticias por correo <br>
+        <input type="radio" name="newsletter" value="0">No enviarme noticias <br>
+        <br>
+        <label for="foto">Foto de perfil</label>
+        <input type="file" name="foto" id="foto" accept="image/png">
+        <label for="bio">Biografia</label>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+      </fieldset>
+      
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
+      
+    </form>
+  </body>
+</html>
