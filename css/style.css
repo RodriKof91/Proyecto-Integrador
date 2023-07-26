@@ -3,6 +3,208 @@
     margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+    
+
+    /* HEADER*/
+
+    header {
+        background-color:#FC7300;
+    }
+
+    .menu {
+        height: 50px;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        justify-content:space-around;
+
+    }
+
+
+    a {
+        text-decoration: none;
+        color: #EFF5F5; 
+
+    }
+
+
+    /* seccion banner */
+        
+    #banner {
+        background-image: url(../img/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 470px;
+        
+    }
+        
+    h1 {
+        font-size: 80px;
+        color: #EFF5F5; 
+        
+    }
+        
+    #banner p {
+        font-weight: 1000;
+        color: #EFF5F5; 
+        
+    }
+
+    /*seccion quienes somos*/
+
+    #quienes-somos {
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        color: #00425A;
+        background-color: yellow;
+
+
+
+    }
+    .centro {
+        text-align: center;
+    }
+
+    h2 {
+        padding-top: 3%;
+        padding-bottom: 2%;
+    }
+
+    .foto-quienessomos {
+        display: flex;
+    }
+
+    .foto-quienessomos img {
+        width: 20%;
+    }
+
+    #quienes-somos p {
+
+
+        padding-left: 2%;
+        width: 60%;
+    }
+
+
+    /*seccion propuesta educativa*/
+        
+        
+    #popuesta-educativa {
+        background-color:#181823;
+        color: #EFF5F5; 
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+        
+    .container {
+        width: 500px;
+        display: flex;
+        height: 800px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+        
+        
+    #popuesta-educativa > h2 {
+        text-align: center;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 250%;
+    }
+        
+        
+        
+    /* Estilos básicos para la card */
+    .tarjeta {
+        width: 150px;
+        height: 280px;
+        border: 3px solid #FC7300;
+        border-radius: 12px;
+        padding:20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-image: url(../img/compu.png);
+        color: #EFF5F5;
+        text-align: center;
+        background-color: #1F8A70;
+    }
+        
+        
+    /* Estilos para el título dentro de la card */
+    .tarjeta h2 {
+        font-size: 20px;
+        color: #181823;
+        font-weight: 900;
+    }
+        
+    /* Estilos para el texto descriptivo dentro de la card */
+    .tarjeta p {
+        margin-top: 10px;
+        color: #181823;
+    }
+        
+    .container button {
+        margin-top: 5%;
+        border-radius: 5px;
+        color:#FC7300;
+        background-color: #181823;
+        border-style: none;
+        
+    }
+
+
+    /* eligenos */
+        
+    #porque-elegirnos {
+        background-color: #00425A; 
+        height: 450px;
+        color:#FC7300;
+    }
+    .foto-quienessomos1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+        
+    #porque-elegirnos p {
+        font-size: 90%;
+        padding-top: 3%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 500px) {
 
     header {
@@ -81,6 +283,7 @@
     .foto-quienessomos {
         display: flex;
         align-items: center;
+        flex-direction: column-reverse;
     }
     
     .foto-quienessomos img {
@@ -99,14 +302,14 @@
     #popuesta-educativa {
         background-color:#181823;
         color: #EFF5F5; 
-        height: 1100px;
+        height: 1200px;
     
     }
     
     .container {
         display: flex;
         flex-direction: column;
-        height: 1000px;
+        height: 1050px;
         justify-content: space-around;
     
     }
@@ -119,12 +322,6 @@
         font-size: 250%;
     }
     
-    /* Estilo para la línea horizontal */
-    .linea{
-        border-bottom: 1px dashed #181823; 
-        width: 100%; /* Ancho completo de la línea */
-        margin: 10px 0; 
-    }
     
     .card {
         margin-left: 10%;
@@ -133,7 +330,7 @@
     /* Estilos básicos para la card */
     .tarjeta {
         width: 75%;
-        height: 180px;
+        height: 190px;
         border: 3px solid #FC7300;
         border-radius: 12px;
         padding:20px;
@@ -174,9 +371,14 @@
         height: 450px;
         color:#FC7300;
     }
-    .foto-quienessomos {
+    .foto-eligenos {
         display: flex;
+        align-items: center;
         flex-direction: column-reverse;
+    }
+
+    .foto-eligenos img {
+        width: 60%;
     }
     
     #porque-elegirnos p {
@@ -189,13 +391,16 @@
     
     #noticias {
          background-color:#181823;
-         color: #EFF5F5; 
+         color: #EFF5F5;
+         height: 170px;
     
     }
     
     #noticias p {
         font-size: 70%;
-        padding-bottom: 4%;
+        padding-bottom: 10%;
+        margin-top: 5%;
+        
     }
     .flex {
         display: flex;
@@ -212,9 +417,8 @@
         flex-direction: column;
         background-color: #00425A;
         color: #EFF5F5; 
-        font-size: 80%;
-    
-    
+        font-size: 80%;    
+        height: 125px;
     
     }
     
@@ -259,7 +463,6 @@
 
     
 }
-
 
 
 
