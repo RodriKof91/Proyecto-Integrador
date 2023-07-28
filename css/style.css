@@ -62,11 +62,10 @@
     /*seccion quienes somos*/
 
     #quienes-somos {
-        height: 370px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         color: #00425A;
-        background-color: yellow;
 
 
 
@@ -85,13 +84,11 @@
     }
 
     .foto-quienessomos img {
-        width: 20%;
+        width: 38%;
+        padding-left: 2%;
     }
 
     #quienes-somos p {
-
-
-        padding-left: 2%;
         width: 60%;
     }
 
@@ -170,30 +167,103 @@
         
     #porque-elegirnos {
         background-color: #00425A; 
-        height: 450px;
+        height: 300px;
         color:#FC7300;
     }
-    .foto-quienessomos1 {
+    .foto-eligenos {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
     }
         
     #porque-elegirnos p {
-        font-size: 90%;
-        padding-top: 3%;
+        padding-left: 3%;
+        width: 60%;
+        padding-right: 3.3%;
+        
     }
 
+
+        /* seccion noticias*/ 
+    
+    #noticias {
+         background-color:#181823;
+         color: #EFF5F5;
+         height: 200px;
+    
+    }
+    
+    #noticias p {
+        font-size: 70%;
+        padding-bottom: 10%;
+        margin-top: 5%;
+        width: 90%;
+        
+    }
+    .flex {
+        display: flex;
+    }
+    
+    .news {
+        margin-top: 2%
+    }
+
+    footer{
+        display: flex;
+        background-color: #00425A;
+        color: #EFF5F5;     
+        height: 250px;
+        justify-content: space-around;
+    
+    }
+
+    #redessociales {
+        margin-top: 5%;
+        width: 30%;
+        display: flex;
+        height: 190px;
+        flex-direction: column;
+
+    }
+    
+    .i-sociales {
+        margin-top: 5%;
+        margin-right: 15px;
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+    #ubicacion {
+        margin-top: 5%;
+        width: 30%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    #contact {
+        margin-top: 5%;
+        height: 190px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    
+    .pie {
+        text-align: center;
+        background-color: #FC7300;
+    }
+
+    .pie p{
+        color:#181823;
+        font-style: oblique;
+    }
+
+
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -409,6 +479,9 @@
     .news {
         margin-top: 2%
     }
+    .news1 {
+        display: none;
+    }
     
     /* seccion footer*/
     
@@ -429,6 +502,11 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    #redessociales p {
+        display: none;;
+    }
+
     
     .i-sociales {
         margin-right: 15px;
@@ -460,126 +538,16 @@
         align-items: center;
     }
 
+    .pie {
+        text-align: center;
+        background-color: #FC7300;
+    }
 
-    
+    .pie p{
+        color:#181823;
+        font-style: oblique;
+        width: 100%;
+        font-size: 70%;
+    }
+ 
 }
-
-
-
-
-
-
-/* Media
-
-/*header {
-    width: 768px;
-    height: 50px;
-    background-color:#FC7300;
-    display: flex;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-}
-
-ul a {
-    text-decoration: none;
-    margin-right: 60px;
-}
-
-/* seccion banner 
-
-#banner {
-    width: 768px;
-    background-image: url(../img/banner.jpeg);
-    height: 370px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-}
-
-h1 {
-    font-size: 60px;
-}
-
-
-/* seccion quienes somos 
-
-#quienes-somos {
-    width: 768px;
-}
-
-
-#quienes-somos img {
-    width: 40%;
-
-}
-
-
-.foto-quienessomos {
-    display: flex;
-}
-
-/* seccion propuesta educativa 
-
-#popuesta-educativa {
-    width: 768px;
-    text-align: center;
-}
-
-
-
-#popuesta-educativa article {
-    width: 280px;
-    height: 322px;
-    flex-shrink: 0;
-    display: inline-block;
-    border-radius: 5px;
-    background: #FFFF;
-    margin-top: 20px;
-}
-
-
-
-/* eligenos 
-#porque-elegirnos {
-    width: 768px;
-}
-
-
-/* seccion noticias 
-#noticias {
-    width: 768px;
-
-}
-
-#noticias article {
-    width: 350px;
-}
-
-.flex {
-    display: flex;
-}
-
-/* seccion footer 
-
-footer{
-    display: flex;
-}
-
-#redessociales {
-    width: 226px;
-}
-
-#ubicacion {
-    width: 226px;
-}
-
-#contacto {
-    width: 226px;
-}*/
