@@ -2,18 +2,14 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: 'Nunito', sans-serif;
-    color: #384047;
-  }
+
   
   form {
     max-width: 300px;
     margin: 10px auto;
     padding: 10px 20px;
-    background: #f4f7f8;
+    background:#FC7300;
     border-radius: 8px;
-    accent-color: #3ac162;
   }
   
   h1 {
@@ -22,30 +18,19 @@
   }
   
   input[type="text"],
-  input[type="password"],
-  input[type="date"],
-  input[type="datetime"],
   input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="time"],
-  input[type="url"],
-  input[type="file"],
-  textarea,
-  select {
-    background: rgba(255,255,255,0.1);
-    border: none;
+  textarea{
     font-size: 16px;
     height: auto;
     margin: 0;
     outline: 0;
     padding: 15px;
     width: 100%;
-    background-color: #e8eeef;
-    color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    background-color: #181823;
+    color: #EFF5F5; 
+    box-shadow: 0 1px 0 #181823 inset;
     margin-bottom: 30px;
+    border-radius: 0%;
   }
   
   input[type="radio"],
@@ -53,15 +38,11 @@
     margin: 0 4px 8px 0;
   }
   
-  select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-  }
+
   
   button[type="submit"] {
     padding: 19px 39px 18px 39px;
-    color: #FFF;
+    color: #EFF5F5; 
     background-color: #4bc970;
     font-size: 18px;
     text-align: center;
@@ -75,7 +56,7 @@
   }
   button[type="reset"] {
     padding: 19px 39px 18px 39px;
-    color: #FFF;
+    color: #EFF5F5; 
     background-color: #b23a48;
     font-size: 18px;
     text-align: center;
@@ -111,7 +92,7 @@
   
   span {
     background-color: #5fcf80;
-    color: #fff;
+    color: #EFF5F5; 
     height: 30px;
     width: 30px;
     display: inline-block;
