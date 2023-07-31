@@ -16,9 +16,9 @@
       <fieldset>
         <legend><span>1</span>Datos Personales</legend>
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" required placeholder="Ingrese nombre">
+        <input type="text" name="nombre" id="nombre" required placeholder="Ingrese nombre" pattern="[A-Z][a-zA-Z]*" title="El nombre debe empezar con mayuscula">
         <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" required placeholder="Ingrese apellido">
+        <input type="text" name="apellido" id="apellido" required placeholder="Ingrese apellido" pattern="[A-Z][a-zA-Z]*" title="El apellido debe empezar con mayuscula">
         <label for="telefono">Telefono:</label>
         <input type="tel" name="telefono" id="telefono" placeholder="Ingrese telefono">
         <label for="e-mail">Email:</label>
@@ -38,7 +38,7 @@
       <fieldset>
         <legend><span>3</span>Consulta</legend>
         <label for="bio">Escribenos tu consulta</label>
-        <textarea name="bio" id="bio" cols="30" rows="15" required></textarea>
+        <textarea name="bio" id="bio" cols="30" rows="15" minlength="60" required title="un maximo de 100 caracteres"></textarea>
       </fieldset>
 
       
