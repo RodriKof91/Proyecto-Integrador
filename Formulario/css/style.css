@@ -19,6 +19,7 @@
   
   input[type="text"],
   input[type="email"],
+  input[type="tel"],
   textarea{
     font-size: 16px;
     height: auto;
@@ -30,7 +31,7 @@
     color: #EFF5F5; 
     box-shadow: 0 1px 0 #181823 inset;
     margin-bottom: 30px;
-    border-radius: 0%;
+    border-radius: 15px;
   }
   
   input[type="radio"],
@@ -43,29 +44,27 @@
   button[type="submit"] {
     padding: 19px 39px 18px 39px;
     color: #EFF5F5; 
-    background-color: #4bc970;
+    background-color: #1F8A70;
     font-size: 18px;
     text-align: center;
     font-style: normal;
     border-radius: 5px;
-    width: 100%;
-    border: 1px solid #3ac162;
+    width: 35%;
+    border: 1px solid #1F8A70;
     border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
   }
   button[type="reset"] {
     padding: 19px 39px 18px 39px;
     color: #EFF5F5; 
-    background-color: #b23a48;
+    background-color: #1F8A70;
     font-size: 18px;
     text-align: center;
     font-style: normal;
     border-radius: 5px;
-    width: 100%;
-    border: 1px solid #b23a48;
+    width: 35%;
+    border: 1px solid #1F8A70;
     border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
   }
   
@@ -91,7 +90,7 @@
   }
   
   span {
-    background-color: #5fcf80;
+    background-color: #1F8A70;
     color: #EFF5F5; 
     height: 30px;
     width: 30px;
@@ -104,6 +103,12 @@
     border-radius: 100%;
   }
   
+  .boton {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
   @media screen and (min-width: 480px) {
   
     form {

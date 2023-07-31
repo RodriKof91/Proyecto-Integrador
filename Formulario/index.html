@@ -12,13 +12,15 @@
   </head>
   <body>
     <h1>Formulario de consulta !!</h1>
-    <form action="resultado.html" method="POST">
+    <form action="https://formsubmit.co/ rodrigonzalez@gmail.com" method="POST">
       <fieldset>
         <legend><span>1</span>Datos Personales</legend>
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre" required>
         <label for="apellido">Apellido:</label>
         <input type="text" name="apellido" id="apellido" required>
+        <label for="telefono">Telefono:</label>
+        <input type="tel" name="telefono" id="telefono">
         <label for="e-mail">Email:</label>
         <input type="email" name="e-mail" id="e-mail" required>
       </fieldset>
@@ -27,17 +29,25 @@
 
       <fieldset>
         <legend><span>2</span>Newsletter</legend>
-        <label for="newsletter">Recibir noticias por correo ?</label>
+        <label for="newsletter">Queres recibir noticias por correo ?</label>
+        <p>El aceptar no te vas a perder nada sobre nuestro instituto ni sobre nuesta comunidad</p>
         <input type="radio" name="newsletter" value="1">Si, me gustaria recibir noticias por correo <br>
         <input type="radio" name="newsletter" value="0">No enviarme noticias <br>
-        <br>
-        <label for="bio">Envianos tu consulta</label>
+      </fieldset>
+
+      <fieldset>
+        <legend><span>3</span>Consulta</legend>
+        <label for="bio">Escribenos tu consulta</label>
         <textarea name="bio" id="bio" cols="30" rows="15"></textarea>
       </fieldset>
-      
 
-      <button type="submit">Enviar</button>
-      <button type="reset">Reset</button>
+      
+      
+      <div class="boton">
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+      </div>
+
       
     </form>
   </body>
