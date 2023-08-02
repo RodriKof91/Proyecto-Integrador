@@ -278,19 +278,24 @@
 @media screen and (max-width: 500px) {
 
     header {
-        height: 130px;
+        height: 180px;
         background-color:#FC7300;
     }
     
+    nav {
+        display: flex;
+
+    }
+
     
     .menu {
-        height: 120px;
+        height: 160px;
         display: flex;
+        margin-left: 15%;
         list-style: none;
         padding: 0;
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
         align-items: center;
     
     }
@@ -298,7 +303,7 @@
     a {
         text-decoration: none;
         color: #EFF5F5; 
-        font-size: 13px;
+        font-size: 17px;
     
     }
     
@@ -315,39 +320,44 @@
         justify-content: center;
         text-align: center;
         width: 100%;
-        height: 370px;
+        height: 460px;
     
     }
     
     h1 {
-        font-size: 60px;
+        font-size: 75px;
         color: #EFF5F5; 
     
     }
     
     #banner p {
         font-weight: 900;
+        font-size: 22px;
         color: #EFF5F5; 
     
     }
     
     /*seccion quienes somos*/ 
     #quienes-somos {
-        height: 370px;
+        height: 650px;
         display: flex;
         flex-direction:column;
         color: #00425A;
         background-color: #EFF5F5;
-    
+        margin-top: 15%;
     
     }
+
+
+
     .centro {
         text-align: center;
     }
     
-    h2 {
+    #quienes-somos h2 {
         padding-top: 3%;
         padding-bottom: 2%;
+        font-size: 33px;
     }
     
     .foto-quienessomos {
@@ -357,13 +367,16 @@
     }
     
     .foto-quienessomos img {
-        width: 60%;
+        margin-top: 5%;
+        width: 100%;
     }
     
     #quienes-somos p {
     
-        font-size: 90%;
         padding-top: 3%;
+        margin-top: 5%;
+        margin-left: 1%;
+        font-size: 17px;
     }
     
     /*seccion propuesta educativa*/
@@ -389,7 +402,8 @@
         text-align: center;
         font-weight: 900;
         font-style: italic;
-        font-size: 250%;
+        font-size: 33px;
+        
     }
     
     
@@ -417,6 +431,7 @@
         font-size: 20px;
         color: #181823;
         font-weight: 900;
+
     }
       
     /* Estilos para el texto descriptivo dentro de la card */
@@ -438,9 +453,16 @@
     
     #porque-elegirnos {
         background-color: #00425A; 
-        height: 450px;
+        height: 750px;
         color:#FC7300;
     }
+
+    #porque-elegirnos h2 {
+    padding-top: 13%;
+    padding-bottom: 2%;
+    font-size: 33px;
+    }
+
     .foto-eligenos {
         display: flex;
         align-items: center;
@@ -448,12 +470,16 @@
     }
 
     .foto-eligenos img {
-        width: 60%;
+        width: 100%;
+        margin-top: 7%;
     }
     
     #porque-elegirnos p {
-        font-size: 90%;
+        font-size: 95%;
         padding-top: 3%;
+        margin-top: 5%;
+        margin-left: 1%;
+        font-size: 17px;
     
     }
     
@@ -462,26 +488,60 @@
     #noticias {
          background-color:#181823;
          color: #EFF5F5;
-         height: 170px;
+         height: 680px;
     
     }
-    
-    #noticias p {
-        font-size: 70%;
-        padding-bottom: 10%;
-        margin-top: 5%;
-        
+
+    #noticias h2 {
+        padding-top: 13%;
+        padding-bottom: 7%;
+        font-size: 33px;
+
     }
+
     .flex {
         display: flex;
+        flex-direction: column;
+
+    }
+
+    .card {
+        margin-left: 10%;
+        margin-top: 3%;
     }
     
-    .news {
-        margin-top: 2%
+    /* Estilos básicos para la card */
+    .tarjeta2 {
+        width: 75%;
+        height: 170px;
+        border: 2px inset #181823;
+        border-radius: 12px;
+        padding:20px;
+        color: #EFF5F5;
+        margin-top: 10%;
     }
-    .news1 {
+      
+      
+    /* Estilos para el título dentro de la card */
+    .tarjeta2 h4 {
+        font-size: 22px;
+        color: #EFF5F5;
+        font-weight: 900;
+
+    }
+      
+    /* Estilos para el texto descriptivo dentro de la card */
+    .tarjeta2 p {
+        margin-top: 10px;
+        color: #EFF5F5;
+        font-size: 17px;
+    }
+    
+
+    .desktop {
         display: none;
     }
+
     
     /* seccion footer*/
     
@@ -490,17 +550,22 @@
         flex-direction: column;
         background-color: #00425A;
         color: #EFF5F5; 
-        font-size: 80%;    
-        height: 125px;
+        height: 530px;
     
     }
     
     #redessociales {
         width: 100%;
         display: flex;
-        height: 50px;
+        flex-direction: column;
+        height: 150px;
         align-items: center;
         justify-content: space-between;
+    }
+
+    #redessociales h2 {
+        padding-top: 25%;
+        font-size: 27px;
     }
 
     #redessociales p {
@@ -509,10 +574,10 @@
 
     
     .i-sociales {
-        margin-right: 15px;
         display: flex;
-        width: 40%;
+        width: 50%;
         justify-content: space-between;
+        margin-top: 10%;
     }
     
     #ubicacion {
@@ -521,33 +586,60 @@
     
     
     #contact {
-        margin-top: 5%;
+        margin-top: 8%;
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
     
     }
     
     #contact h2 {
         margin-top: 10%;
+        font-size: 27px;
+
+    }
+    hr {
+        margin-top: 17%;
+        width: 70%;
+        margin-left: 15%;
     }
     
     .contacto-opciones {
+        height: 130px;
+        margin-top: 3%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+    }
+
+    .inicio {
+        margin-top:20%;
+        text-align: center;
+        background-color: #1F8A70;
+    }
+    #contact a {
+        color: #181823;
+        font-size: 20px;
+        font-weight: 900;
     }
 
     .pie {
         text-align: center;
         background-color: #FC7300;
+        height: 30px;
+        display: flex;
+        align-items: center;
     }
 
     .pie p{
         color:#181823;
         font-style: oblique;
         width: 100%;
-        font-size: 70%;
+        font-size: 95%;
+        font-weight: 900;
     }
  
 }
