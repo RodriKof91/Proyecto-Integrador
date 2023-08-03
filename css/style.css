@@ -11,15 +11,28 @@
 
     header {
         background-color:#FC7300;
-        height: 80px;
+        height: 65px;
+        display: flex;
     }
-     header img{
-        display: none;
 
-     }
+    header img {
+        width: 80%;
+        margin-top: 17%;
+        margin-left: 3%;
+    }
+
+    .logo {
+        width: 8%;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+
+    }
 
     .menu {
-        height: 50px;
+        height: 65px;
         display: flex;
         list-style: none;
         padding: 0;
@@ -34,8 +47,8 @@
     a {
         text-decoration: none;
         color: #181823; 
-        font-size: 18px;
-        font-weight: 900;
+        font-size: 16px;
+        font-weight: 600;
         
     } 
 
@@ -73,7 +86,7 @@
     /*seccion quienes somos*/
 
     #quienes-somos {
-        height: 320px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         color: #00425A;
@@ -86,7 +99,7 @@
     }
 
     h2 {
-        padding-top: 5%;
+        padding-top: 8%;
         padding-bottom: 4%;
         font-size: 33px;
     }
@@ -103,6 +116,8 @@
     #quienes-somos p {
         width: 60%;
         font-size: 17px;
+        font-weight: 600;
+        margin-left: 1%;
     }
 
 
@@ -112,7 +127,7 @@
     #popuesta-educativa {
         background-color:#EFF5F5;
         color: #181823; 
-        height: 1600px;
+        height: 1750px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -122,10 +137,15 @@
     #popuesta-educativa > h2 {
         text-align: center;
         font-weight: 900;
-        font-style: italic;
-        font-size: 33px;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        font-size: 35px;
+        background-color: #181823;
+        color: #EFF5F5;
+        padding:  15px 20px;
+        display: block;
+        margin: 20px 50px;
+        text-decoration: none;
+        margin-top: 20%;
+        border: 3px solid #1F8A70;
         
     }
         
@@ -135,6 +155,7 @@
         height: 1500px;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-top: 10%;
     }
  
     .card0 {
@@ -142,7 +163,8 @@
         width: 300px;
         height: 600px;
         border-radius: 15px;
-        border: 5px solid #1F8A70;
+        border: 5px solid #181823;
+
 
     }
     
@@ -179,7 +201,7 @@
         text-decoration: none;
         margin-top: 20%;
         border-radius: 10px;
-        border: 3px solid #181823;
+        border: 3px solid #1F8A70;
     
     }
     
@@ -188,6 +210,7 @@
         margin-top: 10%;
         font-size: 30px;
         color: #EFF5F5;
+        font-style:italic;
     }
 
     
@@ -212,66 +235,125 @@
 
 
     
-    
-        
-
-
 
     /* eligenos */
         
     #porque-elegirnos {
-        background-color: #00425A; 
-        height: 300px;
-        color:#FC7300;
+        background-color: #1F8A70; 
+        height: 500px;
+        color: #181823;
     }
-    .foto-eligenos {
+
+    #porque-elegirnos h2 {
+        padding-bottom: 5%;
+        font-size: 33px;
+        font-weight: 900;
+        }
+    
+    .container-eligenos {
         display: flex;
         flex-direction: row-reverse;
+
+    }
+
+    .container-eligenos img {
+        height: 80%;
     }
         
     #porque-elegirnos p {
         padding-left: 3%;
         width: 60%;
         padding-right: 3.3%;
-        
+        font-size: 18px;
+        font-weight: 700;
     }
 
 
         /* seccion noticias*/ 
     
-    #noticias {
-         background-color:#181823;
-         color: #EFF5F5;
-         height: 200px;
-    
-    }
-    
-    #noticias p {
-        font-size: 70%;
-        padding-bottom: 10%;
-        margin-top: 5%;
-        width: 90%;
+        #noticias {
+            background-color:#181823;
+            color: #EFF5F5;
+            height: 1000px;
         
-    }
-    .flex {
-        display: flex;
-    }
+        }
+        
+        #noticias p {
+           font-size: 95%;
+           padding-bottom: 10%;
+           margin-top: 5%;
+           width: 90%;
+           
+        }
+        .flex {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+        }
+        
+        .card {
+           margin-top: 3%;
+        }
+        
+        /* Estilos básicos para la card */
+        .tarjeta2 {
+           width: 300px;
+           height: 280px;
+           border: 2px inset #181823;
+           padding:10px;
+           color: #EFF5F5;
+           margin-top: 15%;
+        }
+         
+        .card1-image {
+            height: 100px;
+            background-size: cover;
+        }
+        
+        .image1 {
+            background-image: url(../img/excursionZoo.jpg);
+        }
+        .image2 {
+            background-image: url(../img/arteYcreatividad.jpg);
+        }
+        .image3 {
+            background-image: url(../img/charlaSeguridad.jpg);
+        }
+        .image4 {
+            background-image: url(../img/diaDelDeporte.jpg);
+        }
+         
+        /* Estilos para el título dentro de la card */
+        .tarjeta2 h4 {
+           font-size: 22px;
+           color: #EFF5F5;
+           font-weight: 900;
+           margin-top: 10%;
+        
+        }
+         
+        /* Estilos para el texto descriptivo dentro de la card */
+        .tarjeta2 p {
+           margin-top: 10px;
+           color: #EFF5F5;
+           font-size: 17px;
+        }
     
-    .news {
-        margin-top: 2%
-    }
+
+    /*footer*/
 
     footer{
         display: flex;
         background-color: #00425A;
         color: #EFF5F5;     
-        height: 250px;
+        height: 350px;
         justify-content: space-around;
     
     }
 
+
     #redessociales {
-        margin-top: 3%;
+        margin-top: 7%;
         width: 30%;
         display: flex;
         height: 190px;
@@ -279,15 +361,26 @@
 
     }
     
-    .i-sociales {
+    footer h2 {
+        font-size: 33px;
+    }
+
+    #redessociales p {
         margin-top: 5%;
+        font-size: 17px;
+        font-weight: 600;
+
+    }
+    
+    .i-sociales {
+        margin-top: 8%;
         margin-right: 15px;
         display: flex;
-        width: 90%;
+        width: 80%;
         justify-content: space-between;
     }
     #ubicacion {
-        margin-top: 3%;
+        margin-top: 7%;
         width: 30%;
         height: 200px;
         display: flex;
@@ -297,7 +390,7 @@
 
 
     #contact {
-        margin-top: 3%;
+        margin-top: 7%;
         height: 190px;
         width: 30%;
         display: flex;
@@ -306,14 +399,31 @@
     
     }
     
+    #contact p {
+        margin-top: 7%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #contact a {
+        display: none;
+    }
+    
     .pie {
-        text-align: center;
+        display: flex;
+        align-items: center;
         background-color: #FC7300;
+        height: 30px;
+        justify-content: center;
     }
 
     .pie p{
         color:#181823;
         font-style: oblique;
+        font-size: 17px;
+        font-weight: 900;
     }
 
 
@@ -334,18 +444,30 @@
     header {
         height: 170px;
         background-color:#FC7300;
+        display: flex;
     }
-    
+
+    header img {
+        width: 80%;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
     nav {
         display: flex;
+        width: 100%;
 
     }
+
+
 
     
     .menu {
         height: 160px;
         display: flex;
-        margin-left: 13%;
+        margin-left: 8%;
         list-style: none;
         padding: 0;
         flex-direction: column;
@@ -432,6 +554,7 @@
         margin-top: 5%;
         margin-left: 1%;
         font-size: 17px;
+        font-weight: 800;
     }
     
     /*seccion propuesta educativa*/
@@ -440,14 +563,14 @@
     #popuesta-educativa {
         background-color:#EFF5F5;
         color: #181823; 
-        height: 2900px;
+        height: 2950px;
     
     }
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 2800px;
+        height: 2850px;
         justify-content: space-around;
     }
     
@@ -457,6 +580,7 @@
         height: 600px;
         border-radius: 15px;
         border: 5px solid #1F8A70;
+        margin-top: 20%;
 
     }
     
@@ -532,7 +656,7 @@
     
     #porque-elegirnos {
         background-color: #EFF5F5; 
-        height: 750px;
+        height: 770px;
         color: #181823;
     }
 
@@ -548,9 +672,8 @@
         flex-direction: column-reverse;
     }
 
-    .foto-eligenos img {
+    .container-eligenos img {
         width: 100%;
-        margin-top: 7%;
     }
     
     #porque-elegirnos p {
@@ -559,6 +682,7 @@
         margin-top: 5%;
         margin-left: 1%;
         font-size: 17px;
+        font-weight: 800;
     
     }
     
@@ -629,7 +753,7 @@
         flex-direction: column;
         background-color: #00425A;
         color: #EFF5F5; 
-        height: 530px;
+        height: 650px;
     
     }
     
@@ -637,14 +761,16 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        height: 150px;
+        height: 180px;
         align-items: center;
         justify-content: space-between;
     }
 
     #redessociales h2 {
         padding-top: 25%;
-        font-size: 27px;
+        font-size: 33px;
+        font-weight: 900;
+
     }
 
     #redessociales p {
@@ -665,28 +791,30 @@
     
     
     #contact {
-        margin-top: 8%;
+        margin-top: 15%;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        font-weight: 900;
     
     }
     
     #contact h2 {
         margin-top: 10%;
-        font-size: 27px;
+        font-size: 33px;
+        font-weight: 900;
 
     }
     hr {
-        margin-top: 17%;
+        margin-top: 20%;
         width: 70%;
         margin-left: 15%;
     }
     
     .contacto-opciones {
-        height: 130px;
+        height: 160px;
         margin-top: 3%;
         display: flex;
         flex-direction: column;
