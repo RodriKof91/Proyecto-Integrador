@@ -1,6 +1,7 @@
 * {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
+    padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -278,7 +279,7 @@
 @media screen and (max-width: 500px) {
 
     header {
-        height: 180px;
+        height: 170px;
         background-color:#FC7300;
     }
     
@@ -291,7 +292,7 @@
     .menu {
         height: 160px;
         display: flex;
-        margin-left: 15%;
+        margin-left: 13%;
         list-style: none;
         padding: 0;
         flex-direction: column;
@@ -302,7 +303,7 @@
     
     a {
         text-decoration: none;
-        color: #EFF5F5; 
+        color: #181823; 
         font-size: 17px;
     
     }
@@ -339,7 +340,7 @@
     
     /*seccion quienes somos*/ 
     #quienes-somos {
-        height: 650px;
+        height: 640px;
         display: flex;
         flex-direction:column;
         color: #00425A;
@@ -383,17 +384,79 @@
     
     
     #popuesta-educativa {
-        background-color:#181823;
-        color: #EFF5F5; 
-        height: 1200px;
+        background-color:#EFF5F5;
+        color: #181823; 
+        height: 2900px;
     
     }
-    
     .container {
         display: flex;
         flex-direction: column;
-        height: 1050px;
+        align-items: center;
+        height: 2800px;
         justify-content: space-around;
+    }
+    
+    .card0 {
+        background-color: #00425A;
+        width: 300px;
+        height: 600px;
+        border-radius: 15px;
+        border: 5px solid #1F8A70;
+
+    }
+    
+    .card-image {
+        height: 200px;
+        background-size: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .card-1 {
+        background-image: url(../img/multidisciplinario.jpg);
+    }
+    
+    .card-2 {
+        background-image: url(../img/aprend-coorporativo.jpg);
+    }
+    
+    .card-3 {
+        background-image: url(../img/ni-os-de-excursi-n.jpg.jpg);
+    }
+    
+    .card-4 {
+        background-image: url(../img/evaluacion-formativa.jpg);
+    }
+    
+    .card0 a {
+        background-color: #FC7300;
+        color: #181823;
+        padding:  15px 20px;
+        display: block;
+        text-align: center;
+        margin: 20px 50px;
+        font-size: 20px;
+        text-decoration: none;
+        margin-top: 20%;
+        border-radius: 10px;
+        border: 3px solid #181823;
+    
+    }
+    
+    .card0 h2 {
+        text-align: center;
+        margin-top: 10%;
+        font-size: 30px;
+        color: #EFF5F5;
+    }
+    
+    .card0 p{
+        margin-top: 10%;
+        margin-left: 2%;
+        font-size: 18px;
+        width: 95%;
+        text-align: justify;
+        color: #EFF5F5;
     
     }
     
@@ -403,58 +466,20 @@
         font-weight: 900;
         font-style: italic;
         font-size: 33px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background: #1F8A70;
         
     }
     
     
-    .card {
-        margin-left: 10%;
-    }
-    
-    /* Estilos básicos para la card */
-    .tarjeta {
-        width: 75%;
-        height: 190px;
-        border: 3px solid #FC7300;
-        border-radius: 12px;
-        padding:20px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        background-image: url(../img/compu.png);
-        color: #EFF5F5;
-        text-align: center;
-        background-color: #1F8A70;
-    }
-      
-      
-    /* Estilos para el título dentro de la card */
-    .tarjeta h2 {
-        font-size: 20px;
-        color: #181823;
-        font-weight: 900;
-
-    }
-      
-    /* Estilos para el texto descriptivo dentro de la card */
-    .tarjeta p {
-        margin-top: 10px;
-        color: #181823;
-    }
-    
-    .container button {
-        margin-top: 5%;
-        border-radius: 5px;
-        color:#FC7300;
-        background-color: #181823;
-        border-style: none;
-    
-    }
     
     /* eligenos */
     
     #porque-elegirnos {
-        background-color: #00425A; 
+        background-color: #EFF5F5; 
         height: 750px;
-        color:#FC7300;
+        color: #181823;
     }
 
     #porque-elegirnos h2 {
