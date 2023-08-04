@@ -86,7 +86,7 @@
     /*seccion quienes somos*/
 
     #quienes-somos {
-        height: 350px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         color: #00425A;
@@ -120,6 +120,15 @@
         margin-left: 1%;
     }
 
+    #quienes-somos h2 {
+
+        color: #181823;
+        text-shadow: 0 0 10px #EFF5F5, 0 0 20px #EFF5F5, 0 0 30px #1F8A70, 0 0 40px #1F8A70, 0 0 50px #00425A, 0 0 60px #00425A;
+        margin-bottom: 70px;
+        margin-top: 40px;
+      
+    }
+
 
     /*seccion propuesta educativa*/
         
@@ -138,14 +147,16 @@
         text-align: center;
         font-weight: 900;
         font-size: 35px;
-        background-color: #181823;
-        color: #EFF5F5;
         padding:  15px 20px;
         display: block;
         margin: 20px 50px;
         text-decoration: none;
         margin-top: 20%;
-        border: 3px solid #1F8A70;
+        border: 3px solid #00425A;
+        text-shadow: 2px 2px 4px #EFF5F5;
+        background-color:#1F8A70
+
+
         
     }
         
@@ -225,29 +236,31 @@
     }
 
     .card4 h2 {
-        margin-top: 0%;
+        margin-top: -1%;
     }
 
     .card4 a {
-        margin-top: 14%;    
+        margin-top: 13%;    
            
     }
-
-
     
 
     /* eligenos */
         
     #porque-elegirnos {
         background-color: #1F8A70; 
-        height: 500px;
+        height: 600px;
         color: #181823;
     }
 
+
+
     #porque-elegirnos h2 {
-        padding-bottom: 5%;
+        padding-bottom: 10%;
         font-size: 33px;
         font-weight: 900;
+        text-shadow: 2px 2px 4px #00425A;
+
         }
     
     .container-eligenos {
@@ -266,78 +279,93 @@
         padding-right: 3.3%;
         font-size: 18px;
         font-weight: 700;
+        text-shadow: 1px 1px 2px #00425A;
+
     }
 
 
         /* seccion noticias*/ 
     
-        #noticias {
-            background-color:#181823;
-            color: #EFF5F5;
-            height: 1000px;
+    #noticias {
+        background-color:#181823;
+        color: #EFF5F5;
+        height: 930px;
         
-        }
+    }
+
+      
+
+    #noticias h2{
+        background-color: #EFF5F5;
+        border: 3px solid #FC7300; 
+        padding: 10px; 
+        color: #181823;
+        margin-bottom: 50px;
+
+    }
         
-        #noticias p {
-           font-size: 95%;
-           padding-bottom: 10%;
-           margin-top: 5%;
-           width: 90%;
+    #noticias p {
+        font-size: 95%;
+        padding-bottom: 10%;
+        margin-top: 5%;
+        width: 90%;
            
-        }
-        .flex {
-           display: flex;
-           flex-wrap: wrap;
-           justify-content: space-around;
-        }
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
         
-        .card {
-           margin-top: 3%;
-        }
+    .card {
+        margin-top: 15%;
+    }
         
-        /* Estilos básicos para la card */
-        .tarjeta2 {
-           width: 300px;
-           height: 280px;
-           border: 2px inset #181823;
-           padding:10px;
-           color: #EFF5F5;
-           margin-top: 15%;
-        }
+/* Estilos básicos para la card */
+    .tarjeta2 {
+        width: 300px;
+        height: 280px;
+        border: 2px inset #181823;
+        padding:10px;
+        color: #EFF5F5;
+        margin-top: 15%;
+    }
          
-        .card1-image {
-            height: 100px;
-            background-size: cover;
-        }
+    .card1-image {
+        height: 100px;
+        background-size: cover;
+    }
         
-        .image1 {
-            background-image: url(../img/excursionZoo.jpg);
-        }
-        .image2 {
-            background-image: url(../img/arteYcreatividad.jpg);
-        }
-        .image3 {
-            background-image: url(../img/charlaSeguridad.jpg);
-        }
-        .image4 {
-            background-image: url(../img/diaDelDeporte.jpg);
-        }
+    .image1 {
+        background-image: url(../img/excursionZoo.jpg);
+    }
+    .image2 {
+        background-image: url(../img/arteYcreatividad.jpg);
+    }
+    .image3 {
+        background-image: url(../img/charlaSeguridad.jpg);
+    }
+    .image4 {
+        background-image: url(../img/diaDelDeporte.jpg);
+    }
          
-        /* Estilos para el título dentro de la card */
-        .tarjeta2 h4 {
-           font-size: 22px;
-           color: #EFF5F5;
-           font-weight: 900;
-           margin-top: 10%;
+/* Estilos para el título dentro de la card */
+    .tarjeta2 h4 {
+        font-size: 22px;
+        color: #EFF5F5;
+        font-weight: 900;
+        margin-top: 10%;
         
-        }
+    }
          
-        /* Estilos para el texto descriptivo dentro de la card */
-        .tarjeta2 p {
-           margin-top: 10px;
-           color: #EFF5F5;
-           font-size: 17px;
-        }
+/* Estilos para el texto descriptivo dentro de la card */
+    .tarjeta2 p {
+        margin-top: 10px;
+        color: #EFF5F5;
+        font-size: 17px;
+    }
+
+
     
 
     /*footer*/
@@ -442,7 +470,7 @@
 @media screen and (max-width: 500px) {
 
     header {
-        height: 170px;
+        height: 180px;
         background-color:#FC7300;
         display: flex;
     }
@@ -462,8 +490,6 @@
     }
 
 
-
-    
     .menu {
         height: 160px;
         display: flex;
@@ -516,7 +542,7 @@
     
     /*seccion quienes somos*/ 
     #quienes-somos {
-        height: 640px;
+        height: 770px;
         display: flex;
         flex-direction:column;
         color: #00425A;
@@ -524,7 +550,6 @@
         margin-top: 15%;
     
     }
-
 
 
     .centro {
@@ -544,16 +569,22 @@
     }
     
     .foto-quienessomos img {
-        margin-top: 5%;
+        margin-top: 17%;
         width: 100%;
+    }
+
+    #quienes-somos h2 {
+        margin-top: 20px;
+        color: #181823;
+        text-shadow: 0 0 3px #EFF5F5, 0 0 7px #EFF5F5, 0 0 9px #1F8A70, 0 0 14px #1F8A70, 0 0 19px #00425A, 0 0 25px #00425A;
     }
     
     #quienes-somos p {
     
-        padding-top: 3%;
-        margin-top: 5%;
+        padding-top: 5%;
+        margin-top: 12%;
         margin-left: 1%;
-        font-size: 17px;
+        font-size: 18px;
         font-weight: 800;
     }
     
@@ -643,10 +674,11 @@
         text-align: center;
         font-weight: 900;
         font-style: italic;
-        font-size: 33px;
+        font-size: 34px;
         padding-top: 5%;
         padding-bottom: 5%;
         background: #1F8A70;
+        text-shadow: 2px 2px 4px #EFF5F5;
         
     }
     
@@ -656,14 +688,16 @@
     
     #porque-elegirnos {
         background-color: #EFF5F5; 
-        height: 770px;
+        height: 900px;
         color: #181823;
     }
 
     #porque-elegirnos h2 {
-    padding-top: 13%;
+    padding-top: 16%;
     padding-bottom: 2%;
     font-size: 33px;
+    text-shadow: 4px 6px 8px #00425A;
+
     }
 
     .foto-eligenos {
@@ -675,15 +709,22 @@
     .container-eligenos img {
         width: 100%;
     }
+
+    #porque-elegirnos img {
+        margin-top: 4%;
+    }
     
     #porque-elegirnos p {
         font-size: 95%;
-        padding-top: 3%;
+        padding-top: 6%;
         margin-top: 5%;
         margin-left: 1%;
-        font-size: 17px;
+        font-size: 18px;
         font-weight: 800;
     
+    }
+    .segundoParrafo {
+        margin-top: -4% !important;
     }
     
     /* seccion noticias*/ 
@@ -691,21 +732,40 @@
     #noticias {
          background-color:#181823;
          color: #EFF5F5;
-         height: 680px;
+         height: 1070px;
     
     }
 
     #noticias h2 {
         padding-top: 13%;
-        padding-bottom: 7%;
         font-size: 33px;
+
+        background-color: #181823;
+        border-top: 3px solid #FC7300; 
+        border-bottom: 3px solid #FC7300;
+        padding: 10px; 
+        color: #EFF5F5;
+        margin-bottom: 30px;
 
     }
 
     .flex {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+    }
 
+     
+    .card1-image {
+        height: 100px;
+        background-size: cover;
+    }
+    
+    .image1 {
+        background-image: url(../img/excursionZoo.jpg);
+    }
+    .image2 {
+        background-image: url(../img/arteYcreatividad.jpg);
     }
 
     .card {
@@ -715,21 +775,23 @@
     
     /* Estilos básicos para la card */
     .tarjeta2 {
-        width: 75%;
-        height: 170px;
+        width: 90%;
+        height: 330px;
         border: 2px inset #181823;
         border-radius: 12px;
         padding:20px;
         color: #EFF5F5;
-        margin-top: 10%;
+        margin-top: 25%;
+        margin-left: -20px;
     }
       
       
     /* Estilos para el título dentro de la card */
     .tarjeta2 h4 {
-        font-size: 22px;
+        font-size: 26px;
         color: #EFF5F5;
         font-weight: 900;
+        margin-top: 13%;
 
     }
       
@@ -738,6 +800,7 @@
         margin-top: 10px;
         color: #EFF5F5;
         font-size: 17px;
+        margin-top: 7%;
     }
     
 
@@ -799,6 +862,10 @@
         align-items: center;
         font-weight: 900;
     
+    }
+
+    #contact p {
+        font-size: 17px;
     }
     
     #contact h2 {
