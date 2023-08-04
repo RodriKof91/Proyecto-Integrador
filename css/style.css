@@ -388,18 +388,19 @@
     }
     
     footer h2 {
-        font-size: 33px;
+        font-size: 30px;
     }
 
     #redessociales p {
         margin-top: 5%;
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 600;
+        width: 90%;
 
     }
     
     .i-sociales {
-        margin-top: 8%;
+        margin-top: 12%;
         margin-right: 15px;
         display: flex;
         width: 80%;
