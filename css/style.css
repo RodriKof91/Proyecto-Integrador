@@ -289,18 +289,16 @@
     #noticias {
         background-color:#181823;
         color: #EFF5F5;
-        height: 930px;
+        height: 1000px;
         
     }
-
-      
 
     #noticias h2{
         background-color: #EFF5F5;
         border: 3px solid #FC7300; 
         padding: 10px; 
         color: #181823;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
 
     }
         
@@ -323,12 +321,12 @@
         
 /* Estilos básicos para la card */
     .tarjeta2 {
-        width: 300px;
+        width: 270px;
         height: 280px;
         border: 2px inset #181823;
         padding:10px;
         color: #EFF5F5;
-        margin-top: 15%;
+        margin-top: 30%;
     }
          
     .card1-image {
