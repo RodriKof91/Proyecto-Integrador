@@ -681,8 +681,6 @@
         
     }
     
-    
-    
     /* eligenos */
     
     #porque-elegirnos {
@@ -818,6 +816,8 @@
         height: 650px;
     
     }
+
+    /*Redes Sociales*/
     
     #redessociales {
         width: 100%;
@@ -846,11 +846,14 @@
         justify-content: space-between;
         margin-top: 10%;
     }
+
+    /*Ubicacion*/
     
     #ubicacion {
         display: none;
     }
     
+    /*Contacto*/
     
     #contact {
         margin-top: 15%;
